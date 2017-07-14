@@ -1,10 +1,10 @@
-![SpaceXaminer](banner-stars.png)  
+![SpaceXaminer](readme-src/banner-stars.png)  
 
 # [SpaceXaminer](https://www.github.com/derekkramer/spacexaminer "SpaceXaminer")
 
 **SpaceXaminer** is a simple and easy-to-use 3D application that allows you to view all completed [SpaceX](https://spacex.com) rocket launches. The application is built in [React](https://facebook.github.io/react/) on a Node.js and Express back end. The 3D viewer is built in the [THREE.js](https://threejs.org) library, which is built on the WebGL API.
 
----
+![Screenshot](readme-src/spacexaminer-viewer-mockup-shadow.png)
 
 ## Table of contents
 
