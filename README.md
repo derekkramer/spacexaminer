@@ -34,11 +34,13 @@ $ npm start
 
 ## Community Resources
 
-##### [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Node.js_logo_2015.svg/591px-Node.js_logo_2015.svg.png" height="50" align="top">](https://nodejs.org)
-##### [<img src="http://www.amt.in/img/services/express.png" height="50" align="top">](https://expressjs.com)
-##### [<img src="https://cosmicjs.com/uploads/9c2d95d0-27b0-11e7-b6ae-8108cf4caa96-react.svg" height="50" align="top">](https://facebook.github.io/react/)
-##### [<img src="http://www.pixelstech.net/article/images/three_logo.jpg" height="50" align="top">](https://threejs.org)
-##### [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/WebGL_Logo.svg/1443px-WebGL_Logo.svg.png" height="50" align="top">](https://www.khronos.org/webgl/)
+<div style="margin-left: 3em; line-height: 70px;">
+[<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Node.js_logo_2015.svg/591px-Node.js_logo_2015.svg.png" height="50" align="top">](https://nodejs.org)  
+[<img src="http://www.amt.in/img/services/express.png" height="50" align="top">](https://expressjs.com)  
+[<img src="https://cosmicjs.com/uploads/9c2d95d0-27b0-11e7-b6ae-8108cf4caa96-react.svg" height="50" align="top">](https://facebook.github.io/react/)  
+[<img src="http://www.pixelstech.net/article/images/three_logo.jpg" height="50" align="top">](https://threejs.org)  
+[<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/WebGL_Logo.svg/1443px-WebGL_Logo.svg.png" height="50" align="top">](https://www.khronos.org/webgl/)  
+</div>
 
 ## License
 
