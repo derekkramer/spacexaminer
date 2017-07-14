@@ -1,4 +1,4 @@
-![SpaceXaminer](readme/banner.png)  
+![SpaceXaminer](banner-stars.png)  
 
 # [SpaceXaminer](https://www.github.com/derekkramer/spacexaminer "SpaceXaminer")
 
