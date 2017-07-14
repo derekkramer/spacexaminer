@@ -14,21 +14,24 @@
 
 ## <a name="Installation"><a>Installation for Development
 
-Navigate into the folder you want to clone the repository into and enter the following command into the terminal:
+First ensure that you have Node and Git installed by entering:
 
 ```
-$ git clone https://www.github.com/spacexaminer
+$ brew update
+$ brew install node
+$ brew install git
 ```
 
-Navigate into the repository directory and enter the following command into the terminal:
+Then, navigate into the directory where you want to clone the repository and enter:
+
+```
+$ git clone https://www.github.com/derekkramer/spacexaminer
+```
+
+Finally, navigate into the repository directory and install dependencies and run the build:
 
 ```
 $ npm install
-```
-
-Finally enter the following to the terminal to run the build:
-
-```
 $ npm start
 ```
 
