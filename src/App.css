@@ -2,6 +2,11 @@ body {
   margin: 0;
   background-color: black; }
 
+div > button, div > header, div > section {
+  font-family: 'Anaheim';
+  font-size: 18px;
+  color: white; }
+
 .header {
   display: flex;
   flex-direction: row;
@@ -14,14 +19,11 @@ body {
     width: 30%; }
   .header button {
     width: 100%;
-    background-color: #1D1D1D;
-    border: 2px solid #414141;
+    background-color: #151515;
+    border: 2px solid #616161;
     padding: 16px 32px;
     text-align: left;
     display: inline-block;
-    font-family: 'Anaheim';
-    font-size: 18px;
-    font-weight: bold;
     color: white;
     -o-transition-duration: 0.4s;
     /* Opera */
@@ -31,5 +33,20 @@ body {
     /* Safari */
     transition-duration: 0.4s;
     cursor: pointer; }
+
+.manifest {
+  width: 100%;
+  padding: 2em 1.5em;
+  box-sizing: border-box; }
+  .manifest header {
+    background-color: #151515;
+    border-top: 1px solid #616161;
+    border-bottom: 1px solid #616161;
+    padding: 16px 32px;
+    color: white; }
+  .manifest section {
+    background-color: #242424;
+    border-top: 1px solid #616161;
+    padding: 16px 32px; }
 
 /*# sourceMappingURL=App.css.map */

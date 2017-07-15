@@ -4,8 +4,13 @@ import '../App.css';
 export default class Manifest extends Component{
     render(){
         return(
-            <div>
-                <h1>Manifest</h1>
+            <div className="manifest">
+                <header>Titles here</header>
+                <section>Row here</section>
+                <section>Row here</section>
+                <section>Row here</section>
+                <section>Row here</section>
+                <section>Row here</section>
             </div>
         );
     }

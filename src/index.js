@@ -11,7 +11,6 @@ import {
 import Header from './components/Header';
 import Viewer from './components/Viewer';
 import Manifest from './components/Manifest';
-import Footer from './components/Footer';
 
 ReactDOM.render(
     <Router>
