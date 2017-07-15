@@ -1,6 +1,13 @@
 $lightgray: #414141;
 $darkgray: #1D1D1D;
 
+@mixin transition-duration($duration){
+    -o-transition-duration: $duration; /* Opera */
+    -moz-transition-duration: $duration; /* Firefox */
+    -webkit-transition-duration: $duration; /* Safari */
+    transition-duration: $duration;
+}
+
 body {
     margin: 0;
     background-color: black;
@@ -26,8 +33,7 @@ body {
         font-size: 18px;
         font-weight: bold;
         color: white;
-        -webkit-transition-duration: 0.4s; /* Safari */
-        transition-duration: 0.4s;
+        @include transition-duration(0.4s);
         cursor: pointer;
     }
 
