@@ -2,6 +2,7 @@
 
 # [SpaceXaminer](https://www.github.com/derekkramer/spacexaminer "SpaceXaminer")
 
+[![Build Status](https://travis-ci.org/derekkramer/spacexaminer.svg?branch=master)](https://travis-ci.org/derekkramer/spacexaminer)
 [![Code Climate](https://codeclimate.com/github/derekkramer/spacexaminer/badges/gpa.svg)](https://codeclimate.com/github/derekkramer/spacexaminer)
 [![dependencies Status](https://david-dm.org/expressjs/express/status.svg)](https://david-dm.org/expressjs/express)
 
