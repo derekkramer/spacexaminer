@@ -2,4 +2,25 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import {
+    BrowserRouter as Router,
+    Route,
+    Link
+} from 'react-router-dom';
+
+import Header from './components/Header';
+import Viewer from './components/Viewer';
+import Manifest from './components/Manifest';
+import Footer from './components/Footer';
+
+ReactDOM.render(
+    <Router>
+        <div>
+            <Route path="/" component={App} />
+            <Route exact path="/" component={Viewer} />
+            <Route path="/manifest" component={Manifest} />
+        </div>
+    </Router>
+,
+    document.getElementById('root')
+);

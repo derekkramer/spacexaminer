@@ -1,4 +1,31 @@
+body {
+  margin: 0;
+  background-color: black; }
+
 .header {
-    color: red;
-    text-align: center;
-}
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 2em 1em; }
+  .header img {
+    width: 50%; }
+  .header .dropdown {
+    width: 30%; }
+  .header button {
+    width: 100%;
+    background-color: #1D1D1D;
+    border: 2px solid #414141;
+    padding: 16px 32px;
+    text-align: left;
+    display: inline-block;
+    font-family: 'Anaheim';
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer; }
+
+/*# sourceMappingURL=App.css.map */

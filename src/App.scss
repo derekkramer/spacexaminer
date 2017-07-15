@@ -1,0 +1,39 @@
+$lightgray: #414141;
+$darkgray: #1D1D1D;
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
+.header {
+    img {
+        width: 50%;
+    }
+
+    .dropdown {
+        width: 30%;
+    }
+
+    button {
+        width: 100%;
+        background-color: $darkgray;
+        border: 2px solid $lightgray;
+        padding: 16px 32px;
+        text-align: left;
+        display: inline-block;
+        font-family: 'Anaheim';
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 2em 1em;
+}
