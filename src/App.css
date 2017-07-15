@@ -23,6 +23,10 @@ body {
     font-size: 18px;
     font-weight: bold;
     color: white;
+    -o-transition-duration: 0.4s;
+    /* Opera */
+    -moz-transition-duration: 0.4s;
+    /* Firefox */
     -webkit-transition-duration: 0.4s;
     /* Safari */
     transition-duration: 0.4s;
