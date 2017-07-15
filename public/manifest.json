@@ -3,7 +3,7 @@
   "name": "Create React App Sample",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "http://www.spacex.com/sites/all/themes/spacex2012/favicon.ico",
       "sizes": "192x192",
       "type": "image/png"
     }
