@@ -4,6 +4,7 @@
 
 [![Build Status](https://travis-ci.org/derekkramer/spacexaminer.svg?branch=master)](https://travis-ci.org/derekkramer/spacexaminer)
 [![Code Climate](https://codeclimate.com/github/derekkramer/spacexaminer/badges/gpa.svg)](https://codeclimate.com/github/derekkramer/spacexaminer)
+[![Issue Count](https://codeclimate.com/github/derekkramer/spacexaminer/badges/issue_count.svg)](https://codeclimate.com/github/derekkramer/spacexaminer)
 [![dependencies Status](https://david-dm.org/expressjs/express/status.svg)](https://david-dm.org/expressjs/express)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fderekkramer%2Fspacexaminer.svg?type=shield)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fderekkramer%2Fspacexaminer?ref=badge_shield)
 
