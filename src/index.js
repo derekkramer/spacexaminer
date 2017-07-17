@@ -14,7 +14,7 @@ import Manifest from './components/Manifest';
 
 ReactDOM.render(
     <Router>
-        <div>
+        <div className="appContainer">
             <Route path="/" component={App} />
             <Route exact path="/" component={Viewer} />
             <Route path="/manifest" component={Manifest} />

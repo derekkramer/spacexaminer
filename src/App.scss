@@ -1,4 +1,5 @@
 $lightgray: #616161;
+$lightmidgray: #444444;
 $midgray: #242424;
 $darkgray: #151515;
 
@@ -10,8 +11,16 @@ $darkgray: #151515;
 }
 
 body {
+    display: flex;
+    height: 100vh;
     margin: 0;
     background-color: black;
+}
+
+.appContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 div > button, div > header, div > section {
@@ -26,19 +35,45 @@ div > button, div > header, div > section {
     }
 
     .dropdown {
-        width: 30%;
-    }
+        button {
+            width: 100%;
+            background-color: $darkgray;
+            border: 2px solid $lightgray;
+            padding: 16px 32px;
+            text-align: left;
+            @include transition-duration(0.4s);
+            cursor: pointer;
+            outline: none;
+        }
 
-    button {
-        width: 100%;
-        background-color: $darkgray;
-        border: 2px solid $lightgray;
-        padding: 16px 32px;
-        text-align: left;
-        display: inline-block;
+        button:hover {
+            background-color: $lightmidgray;
+        }
+
+        .content {
+            button {
+                background-color: $midgray;
+                padding: 12px 16px;
+                display: block;
+                border-top: none;
+            }
+
+            button:hover {
+                background-color: $lightmidgray;
+            }
+
+            display: none;
+            position: absolute;
+            right: 1em;
+            // box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        }
+
+        .show {
+            display: block;
+        }
+
+        width: 30%;
         color: white;
-        @include transition-duration(0.4s);
-        cursor: pointer;
     }
 
     display: flex;
@@ -46,6 +81,13 @@ div > button, div > header, div > section {
     justify-content: space-between;
     align-items: flex-end;
     padding: 2em 1em;
+}
+
+.viewer {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 0.5em;
 }
 
 .manifest {
