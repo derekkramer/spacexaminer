@@ -22,8 +22,8 @@ $(window).on('load', () => {
     render();
 });
 
-renderer.setSize(window.innerWidth, window.innerHeight);
-document.body.appendChild(renderer.domElement);
+// renderer.setSize(window.innerWidth, window.innerHeight);
+// document.body.appendChild(renderer.domElement);
 
 // Set up camera orbital controls, auto rotation, and zoom bounds
 const controls = new THREE.OrbitControls(camera, renderer.domElement);
@@ -125,5 +125,3 @@ $(window).on('resize', () => {
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
 });
-
-module.exports =
