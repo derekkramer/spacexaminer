@@ -1,0 +1,82 @@
+body {
+  position: relative;
+  height: 100vh;
+  margin: 0;
+  background-color: black; }
+
+div > button, div > header, div > section {
+  font-family: 'Anaheim';
+  font-size: 18px;
+  color: white; }
+
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 12vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1em 2em;
+  z-index: 1; }
+  .header img {
+    height: 100%; }
+  .header .dropdown {
+    width: 20em;
+    height: 2.5em; }
+    .header .dropdown button {
+      width: 100%;
+      height: 100%;
+      background-color: #151515;
+      border: 2px solid #616161;
+      padding-left: 1em;
+      text-align: left;
+      -o-transition-duration: 0.4s;
+      /* Opera */
+      -moz-transition-duration: 0.4s;
+      /* Firefox */
+      -webkit-transition-duration: 0.4s;
+      /* Safari */
+      transition-duration: 0.4s;
+      cursor: pointer;
+      outline: none; }
+    .header .dropdown button:hover {
+      background-color: #444444; }
+    .header .dropdown .content {
+      display: none;
+      position: relative;
+      top: -2px;
+      border-top: 2px solid #616161; }
+      .header .dropdown .content button {
+        background-color: #242424;
+        height: 2em;
+        border-top: none; }
+      .header .dropdown .content button:hover {
+        background-color: #444444; }
+    .header .dropdown .show {
+      display: block; }
+
+#viewer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; }
+
+.manifest {
+  width: 100%;
+  padding: 2em 1.5em;
+  box-sizing: border-box; }
+  .manifest header {
+    background-color: #151515;
+    border-top: 1px solid #616161;
+    border-bottom: 1px solid #616161;
+    padding: 16px 32px;
+    color: white; }
+  .manifest section {
+    background-color: #242424;
+    border-top: 1px solid #616161;
+    padding: 16px 32px; }
+
+/*# sourceMappingURL=main.css.map */
