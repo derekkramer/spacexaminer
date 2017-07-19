@@ -1,0 +1,70 @@
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: black;
+  background-image: url("../img/starfield-render.jpg"); }
+
+div > button, div > header, div > section {
+  font-family: 'Anaheim';
+  font-size: 18px;
+  color: white; }
+
+.header {
+  width: 100%;
+  height: 12vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1em 2em;
+  z-index: 1; }
+  .header img {
+    height: 100%;
+    opacity: 0.8; }
+  .header button {
+    width: 10em;
+    height: 2.5em;
+    opacity: 0.8;
+    background-color: #151515;
+    border: 2px solid #616161;
+    -o-transition-duration: 0.4s;
+    /* Opera */
+    -moz-transition-duration: 0.4s;
+    /* Firefox */
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    outline: none; }
+  .header button:hover {
+    background-color: #444444; }
+
+.manifest {
+  width: 100%;
+  height: 79vh;
+  overflow: scroll;
+  display: flex;
+  flex-direction: row;
+  margin: 2em 0;
+  padding: 0 1.5em;
+  box-sizing: border-box;
+  opacity: 0.8; }
+  .manifest header {
+    background-color: #151515;
+    border-top: 1px solid #616161;
+    border-bottom: 1px solid #616161;
+    padding: 16px 32px;
+    color: white; }
+  .manifest section {
+    width: 25%;
+    display: flex;
+    flex-direction: column; }
+  .manifest section#date {
+    width: 15%; }
+  .manifest section#customer {
+    width: 35%; }
+  .manifest article {
+    background-color: #242424;
+    border-top: 1px solid #616161;
+    padding: 16px 32px; }

@@ -1,15 +1,15 @@
 {
     "name": "SpaceXaminer",
-    "version": "1.0.0",
-    "description": "",
+    "version": "0.1.0",
+    "description": "SpaceXaminer is a simple and easy-to-use application that allows you to view all successful SpaceX rocket launches on a 3D globe.",
     "main": "app/app.js",
     "scripts": {
         "start": "node app/app.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
-    "author": "",
-    "license": "ISC",
+    "author": "Derek Kramer",
+    "license": "MIT",
     "dependencies": {
         "cors": "^2.8.4",
         "express": "^4.15.3"
@@ -17,10 +17,7 @@
     "devDependencies": {
         "browser-sync": "^2.18.12",
         "gulp": "^3.9.1",
-        "gulp-livereload": "^3.8.1",
         "gulp-nodemon": "^2.2.1",
-        "gulp-sass": "^3.1.0",
-        "nodemon": "^1.11.0",
-        "run-sequence": "^2.0.0"
+        "gulp-sass": "^3.1.0"
     }
 }

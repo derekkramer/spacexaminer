@@ -28,17 +28,30 @@ div > button, div > header, div > section {
         opacity: 0.8;
     }
 
+    button {
+        width: 6em;
+        height: 2em;
+        background-color: $darkgray;
+        border: 2px solid $lightgray;
+        padding-left: 1em;
+        text-align: left;
+        @include transition-duration(0.4s);
+        cursor: pointer;
+        outline: none;
+    }
+
+    .manifest {
+        opacity: 0.6;
+    }
+
+    button:hover {
+        background-color: $lightmidgray;
+    }
+
     .dropdown {
         button {
             width: 100%;
             height: 100%;
-            background-color: $darkgray;
-            border: 2px solid $lightgray;
-            padding-left: 1em;
-            text-align: left;
-            @include transition-duration(0.4s);
-            cursor: pointer;
-            outline: none;
         }
 
         button:hover {
@@ -92,28 +105,8 @@ div > button, div > header, div > section {
     z-index: 1;
 }
 
-#viewer {
+.viewer {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-}
-
-.manifest {
-    header {
-        background-color: $darkgray;
-        border-top: 1px solid $lightgray;
-        border-bottom: 1px solid $lightgray;
-        padding: 16px 32px;
-        color: white;
-    }
-
-    section {
-        background-color: $midgray;
-        border-top: 1px solid $lightgray;
-        padding: 16px 32px;
-    }
-
-    width: 100%;
-    padding: 2em 1.5em;
-    box-sizing: border-box;
 }

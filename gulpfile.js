@@ -1,52 +1,45 @@
 const gulp = require('gulp'),
     sass = require('gulp-sass'),
-    // browserSync = require('browser-sync').create(),
-    nodemon = require('gulp-nodemon'),
-    // nodemon = require('nodemon'),
-    runSequence = require('run-sequence'),
-    livereload = require('gulp-livereload');
+    browserSync = require('browser-sync'),
+    reload = browserSync.reload,
+    nodemon = require('gulp-nodemon');
 
 gulp.task('sass', () => {
-    return gulp.src('./app/public/scss/**/*.scss')
+    return gulp.src('./app/public/scss/*.scss')
     .pipe(sass())
-    .pipe(gulp.dest('./app/public/css'));
+    .pipe(gulp.dest('./app/public/css'))
+    .pipe(reload({ stream : true }));
 });
 
-// gulp.task('browserSync', () => {
-//     browserSync.init({
-//         server: {
-//             baseDir: './app'
-//         }
-//     });
-// });
-
-// gulp.task('nodemon', function() {
-//     nodemon()
-//     //     {
-//     //   script: 'app.js'
-//     // , ext: 'js html'
-//     // , env: { 'NODE_ENV': 'development' }
-//     // })
-// });
-
-gulp.task('watch', () => {
-    // livereload.listen();
-    gulp.watch('./app/public/scss/**/*.scss', ['sass']);
-    // gulp.watch('./app/public/*.html', nodemon.emit('restart'));
-    // gulp.watch('./app/public/scripts/**/*.js', nodemon.emit('restart'));
+gulp.task('nodemon', (cb) => {
+    let called = false;
+    return nodemon({
+        script: 'app/app.js',
+        ignore: ['gulpfile.js', 'node_modules/']
+    })
+    .on('start', () => {
+        if (!called) {
+            called = true;
+            cb();
+        }
+    })
+    .on('restart', () => {
+        setTimeout(() => {
+            reload({ stream: false });
+        }, 1000);
+    });
 });
 
-// gulp.task('default', () => {
-//     runSequence(['sass', 'nodemon', 'watch']);
-// });
+gulp.task('browser-sync', ['sass', 'nodemon'], () => {
+    browserSync({
+        proxy: 'localhost:3000', // local node app address
+        port: 5000, // use *different* port than above
+        notify: false
+    });
+});
 
-gulp.task('default', ['watch'], () => {
-    return nodemon(
-        {
-            script: './app/app.js',
-            watch: './app/*'
-        })
-        .on('restart', function() {
-            console.log('restarted');
-        });
+gulp.task('default', ['browser-sync'], () => {
+    gulp.watch('app/public/*.html', reload);
+    gulp.watch('app/public/scripts/*.js', reload);
+    gulp.watch('app/public/scss/*.scss', ['sass']);
 });

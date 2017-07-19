@@ -1,7 +1,3 @@
-// $('.content').focusout(() => {
-//     $('.content').removeClass('show');
-// });
-
 $('.viewer').click(() => {
     $('.content').removeClass('show');
 });
@@ -30,4 +26,8 @@ $(window).on('load', () => {
                 <span id="${launch.id}">${launch.site}</span>
             </button>`);
     });
+});
+
+$('.manifest').click(() => {
+    window.location = '/manifest';
 });

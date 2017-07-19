@@ -1,0 +1,96 @@
+$lightgray: #616161;
+$lightmidgray: #444444;
+$midgray: #242424;
+$darkgray: #151515;
+
+@mixin transition-duration($duration){
+    -o-transition-duration: $duration; /* Opera */
+    -moz-transition-duration: $duration; /* Firefox */
+    -webkit-transition-duration: $duration; /* Safari */
+    transition-duration: $duration;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+    background-image: url('../img/starfield-render.jpg');
+}
+
+div > button, div > header, div > section {
+    font-family: 'Anaheim';
+    font-size: 18px;
+    color: white;
+}
+
+.header {
+    img {
+        height: 100%;
+        opacity: 0.8;
+    }
+
+    button {
+        width: 10em;
+        height: 2.5em;
+        opacity: 0.8;
+        background-color: $darkgray;
+        border: 2px solid $lightgray;
+        @include transition-duration(0.4s);
+        cursor: pointer;
+        outline: none;
+    }
+
+    button:hover {
+        background-color: $lightmidgray;
+    }
+
+    width: 100%;
+    height: 12vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1em 2em;
+    z-index: 1;
+}
+
+.manifest {
+    header {
+        background-color: $darkgray;
+        border-top: 1px solid $lightgray;
+        border-bottom: 1px solid $lightgray;
+        padding: 16px 32px;
+        color: white;
+    }
+
+    section {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section#date {
+        width: 15%;
+    }
+
+    section#customer {
+        width: 35%;
+    }
+
+    article {
+        background-color: $midgray;
+        border-top: 1px solid $lightgray;
+        padding: 16px 32px;
+    }
+
+    width: 100%;
+    height: 79vh;
+    overflow: scroll;
+    display: flex;
+    flex-direction: row;
+    margin: 2em 0;
+    padding: 0 1.5em;
+    box-sizing: border-box;
+    opacity: 0.8;
+}
