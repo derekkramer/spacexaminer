@@ -13,6 +13,10 @@ app.get('/', (req, res) => {
     res.send('index');
 });
 
+app.get('/manifest', (req, res) => {
+    res.send('manifest');
+});
+
 app.listen(port, () => {
     console.log(`Listening on port ${port}`);
 });

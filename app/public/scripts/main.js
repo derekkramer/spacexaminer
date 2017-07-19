@@ -82,27 +82,6 @@ scene.add(ambientLight);
 scene.add(directionalLight);
 scene.add(shipContainer);
 
-// setTimeout(() => {
-//     selection = {
-//         'origin': 'florida',
-//         'trajectory': 0,
-//         'orbit': 'meo',
-//         'new': true
-//     }
-// }, 5000);
-
-// setTimeout(() => {
-//     selection = {
-//         'origin': 'vandenberg',
-//         'trajectory': 1,
-//         'orbit': 'meo',
-//         'new': true
-//     };
-// }, 20000);
-
-// Start the rendering loop
-// render();
-
 // The render loop
 function render() {
     requestAnimationFrame(render);

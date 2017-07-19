@@ -11,7 +11,6 @@ $darkgray: #151515;
 }
 
 body {
-    position: relative;
     height: 100vh;
     margin: 0;
     background-color: black;
@@ -26,6 +25,7 @@ div > button, div > header, div > section {
 .header {
     img {
         height: 100%;
+        opacity: 0.8;
     }
 
     .dropdown {
@@ -47,19 +47,26 @@ div > button, div > header, div > section {
 
         .content {
             button {
+                display: flex;
+                justify-content: space-between;
                 background-color: $midgray;
                 height: 2em;
-                border-top: none;
+                border: none;
+                border-bottom: 2px solid $lightgray;
             }
 
             button:hover {
                 background-color: $lightmidgray;
             }
 
+            width: 30em;
             display: none;
             position: relative;
             top: -2px;
-            border-top: 2px solid $lightgray;
+            right: 10em;
+            border: 2px solid $lightgray;
+            max-height: 20em;
+            overflow: scroll;
         }
 
         .show {
@@ -68,6 +75,7 @@ div > button, div > header, div > section {
 
         width: 20em;
         height: 2.5em;
+        opacity: 0.6;
     }
 
     position: absolute;

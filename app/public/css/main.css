@@ -1,5 +1,4 @@
 body {
-  position: relative;
   height: 100vh;
   margin: 0;
   background-color: black; }
@@ -23,10 +22,12 @@ div > button, div > header, div > section {
   padding: 1em 2em;
   z-index: 1; }
   .header img {
-    height: 100%; }
+    height: 100%;
+    opacity: 0.8; }
   .header .dropdown {
     width: 20em;
-    height: 2.5em; }
+    height: 2.5em;
+    opacity: 0.6; }
     .header .dropdown button {
       width: 100%;
       height: 100%;
@@ -46,14 +47,21 @@ div > button, div > header, div > section {
     .header .dropdown button:hover {
       background-color: #444444; }
     .header .dropdown .content {
+      width: 30em;
       display: none;
       position: relative;
       top: -2px;
-      border-top: 2px solid #616161; }
+      right: 10em;
+      border: 2px solid #616161;
+      max-height: 20em;
+      overflow: scroll; }
       .header .dropdown .content button {
+        display: flex;
+        justify-content: space-between;
         background-color: #242424;
         height: 2em;
-        border-top: none; }
+        border: none;
+        border-bottom: 2px solid #616161; }
       .header .dropdown .content button:hover {
         background-color: #444444; }
     .header .dropdown .show {

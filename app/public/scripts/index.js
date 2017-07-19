@@ -11,12 +11,23 @@ $('.dropdown-button').click(() => {
 });
 
 $('.content').click((event) => {
-    // console.log(event.target.id);
+    let id = event.target.id;
+
     selection = {
-        'origin': 'florida',
-        'trajectory': 0,
-        'orbit': 'meo',
+        'origin': launches[id].origin,
+        'trajectory': +launches[id].trajectory,
+        'orbit': launches[id].orbit,
         'new': true
-    }
+    };
+
     $('.content').removeClass('show');
+});
+
+$(window).on('load', () => {
+    launches.forEach((launch) => {
+        $('.content').append(`<button id="${launch.id}">
+                <span id="${launch.id}">${launch.customer}</span>
+                <span id="${launch.id}">${launch.site}</span>
+            </button>`);
+    });
 });
