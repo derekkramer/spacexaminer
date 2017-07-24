@@ -3,6 +3,8 @@
 # [SpaceXaminer](https://www.github.com/derekkramer/spacexaminer "SpaceXaminer")
 
 [![Build Status](https://travis-ci.org/derekkramer/spacexaminer.svg?branch=master)](https://travis-ci.org/derekkramer/spacexaminer)
+[![GitHub release](https://img.shields.io/github/release/derekkramer/spacexaminer.svg)]()
+[![Github All Releases](https://img.shields.io/github/downloads/derekkramer/spacexaminer/total.svg)]()
 [![Code Climate](https://codeclimate.com/github/derekkramer/spacexaminer/badges/gpa.svg)](https://codeclimate.com/github/derekkramer/spacexaminer)
 [![Issue Count](https://codeclimate.com/github/derekkramer/spacexaminer/badges/issue_count.svg)](https://codeclimate.com/github/derekkramer/spacexaminer)
 [![dependencies Status](https://david-dm.org/expressjs/express/status.svg)](https://david-dm.org/expressjs/express)
