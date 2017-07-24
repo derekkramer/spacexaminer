@@ -10,9 +10,11 @@
 
 ---
 
-**SpaceXaminer** is a simple and easy-to-use application that allows you to view all successful [SpaceX](https://spacex.com) rocket launches on a 3D globe. The application is built on a Node.js and Express back end. The 3D viewer is built in the [THREE.js](https://threejs.org) library, which is built on the WebGL API.
+**SpaceXaminer** is a simple and easy-to-use application that allows you to view all successful [SpaceX](https://spacex.com) rocket launches on a 3D globe. The application is built on a Node.js and Express back end. The 3D viewer is built in the [THREE.js](https://threejs.org) library, which is built on the WebGL API.  
 
-![Screenshot](readme-src/screenshot.png)
+*All launch trajectories are simulated and may not be accurate*
+
+![Screenshot](readme-src/spacexaminer-screenshot-shadow.png)
 
 ## Table of contents
 
