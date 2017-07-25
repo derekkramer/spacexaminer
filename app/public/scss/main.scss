@@ -16,154 +16,184 @@ body {
     background-color: black;
 }
 
-div > button, div > header, div > section, .contact {
+button, div > header, div > section, .contact {
     font-family: 'Anaheim';
     font-size: 18px;
     color: white;
 }
 
-.tech-top {
-    position: fixed;
-    top: 12vh;
-    width: 100%;
-    height: 5em;
-    display: flex;
-    justify-content: space-between;
-    padding: 3em 0;
-    z-index: 1;
-}
-
-.tech-bottom {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 5em;
-    display: flex;
-    justify-content: space-between;
-    padding: 3em 0;
-    z-index: 1;
-}
-
-.tech-image {
-    height: 100%;
-    margin: 0 3em;
-    visibility: hidden;
-}
-
-.contact {
-    div {
-        img {
-            width: 3em;
-        }
-
-        span {
-            margin-left: 1em;
-            font-size: 24pt;
-            font-weight: bold;
-        }
-
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin-bottom: 2em;
-        visibility: hidden;
-    }
-
-    position: fixed;
-    top: 12vh;
-    right: 0;
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    padding: 3em 0;
-    z-index: 1;
-}
-
 .header {
-    img {
-        height: 100%;
-        opacity: 0.8;
-    }
-
-    button {
-        width: 6em;
-        height: 2em;
-        background-color: $darkgray;
-        border: 2px solid $lightgray;
-        padding-left: 1em;
-        text-align: left;
-        @include transition-duration(0.4s);
-        cursor: pointer;
-        outline: none;
-    }
-
-    .manifest {
-        opacity: 0.6;
-    }
-
-    button:hover {
-        background-color: $lightmidgray;
-    }
-
-    .dropdown {
-        button {
-            width: 100%;
-            height: 100%;
-        }
-
-        button:hover {
-            background-color: $lightmidgray;
-        }
-
-        .content {
-            button {
-                display: flex;
-                justify-content: space-between;
-                background-color: $midgray;
-                height: 2em;
-                border: none;
-                border-bottom: 2px solid $lightgray;
-            }
-
-            button:hover {
-                background-color: $lightmidgray;
-            }
-
-            width: 30em;
-            display: none;
-            position: relative;
-            top: -2px;
-            right: 10em;
-            border: 2px solid $lightgray;
-            max-height: 20em;
-            overflow: scroll;
-        }
-
-        .show {
-            display: block;
-        }
-
-        width: 20em;
-        height: 2.5em;
-        opacity: 0.6;
-    }
-
     position: absolute;
-    left: 0;
     top: 0;
-    width: 100%;
-    height: 12vh;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding: 1em 2em;
-    z-index: 2;
+    left: 0;
+    width: 96vw;
+    margin: 2vh 2vw;
+    opacity: 0.8;
+}
+
+button {
+    position: absolute;
+    background-color: $darkgray;
+    border: 2px solid $lightgray;
+    padding-left: 1em;
+    margin: 4vh 2vw;
+    text-align: left;
+    @include transition-duration(0.4s);
+    cursor: pointer;
+    outline: none;
+    opacity: 0.6;
+}
+
+button:hover {
+    background-color: $lightmidgray;
+}
+
+button.manifest {
+    bottom: 0;
+    left: 0;
+    width: 45vw;
+    height: 10vh;
 }
 
 .viewer {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    z-index: -1;
 }
+
+.dropdown {
+    button {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    .content {
+        button {
+            width: 100%;
+            position: static;
+            display: flex;
+            justify-content: space-between;
+            background-color: $midgray;
+            margin: 0;
+            height: 2em;
+            border: none;
+            border-bottom: 2px solid $lightgray;
+        }
+
+        width: 50vw;
+        display: none;
+        position: relative;
+        right: 5vw;
+        bottom: 47.5vh;
+        border: 2px solid $lightgray;
+        max-height: 47vh;
+        overflow: scroll;
+        opacity: 0.8;
+    }
+
+    .show {
+        display: block;
+    }
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 45vw;
+    height: 10vh;
+    margin: 4vh 2vw;
+}
+
+@media (min-width: 1024px) {
+    .header {
+        width: 40vw;
+    }
+
+    button.manifest {
+        top: 0;
+        left: 50vw;
+        width: 10vw;
+        height: 5vh;
+    }
+
+    .dropdown {
+        button {
+            width: 20vw;
+            height: 100%;
+        }
+
+        .content {
+            width: 35vw;
+            right: 15vw;
+            top: 5vh;
+            bottom: auto;
+            max-height: 46vh;
+        }
+
+        top: 0;
+        right: 10vw;
+        width: 10vw;
+        height: 5vh;
+        margin-bottom: 0;
+    }
+}
+
+// ---Used for Capstone Presentation---
+//
+// .tech-top {
+//     position: fixed;
+//     top: 12vh;
+//     width: 100%;
+//     height: 5em;
+//     display: flex;
+//     justify-content: space-between;
+//     padding: 3em 0;
+//     z-index: 1;
+// }
+//
+// .tech-bottom {
+//     position: fixed;
+//     bottom: 0;
+//     width: 100%;
+//     height: 5em;
+//     display: flex;
+//     justify-content: space-between;
+//     padding: 3em 0;
+//     z-index: 1;
+// }
+//
+// .tech-image {
+//     height: 100%;
+//     margin: 0 3em;
+//     visibility: hidden;
+// }
+//
+// .contact {
+//     div {
+//         img {
+//             width: 3em;
+//         }
+//
+//         span {
+//             margin-left: 1em;
+//             font-size: 24pt;
+//             font-weight: bold;
+//         }
+//
+//         display: flex;
+//         flex-direction: row;
+//         align-items: center;
+//         margin-bottom: 2em;
+//         visibility: hidden;
+//     }
+//
+//     position: fixed;
+//     top: 12vh;
+//     right: 0;
+//     width: 35%;
+//     display: flex;
+//     flex-direction: column;
+//     padding: 3em 0;
+//     z-index: 1;
+// }

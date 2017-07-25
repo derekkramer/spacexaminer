@@ -35,39 +35,41 @@ $('.manifest').click(() => {
     window.location = '/manifest';
 });
 
-$(window).keydown((event) => {
-    if(event.which === 84){
-        techView++;
-
-        if(techView === 1){
-            $('#node').css('visibility', 'visible');
-        }else if(techView === 2){
-            $('#express').css('visibility', 'visible');
-        }else if(techView === 3){
-            $('#sass').css('visibility', 'visible');
-        }else if(techView === 4){
-            $('#three').css('visibility', 'visible');
-        }else if(techView === 5){
-            $('#webgl').css('visibility', 'visible');
-        }else if(techView === 6){
-            $('.tech-top > img').css('visibility', 'hidden');
-            $('.tech-bottom > img').css('visibility', 'hidden');
-            techView = 0;
-        }
-    }else if(event.which === 67){
-        contactView++;
-
-        if(contactView === 1){
-            $('#github').css('visibility', 'visible');
-        }else if(contactView === 2){
-            $('#linkedin').css('visibility', 'visible');
-        }else if(contactView === 3){
-            $('#email').css('visibility', 'visible');
-        }else if(contactView === 4){
-            $('#phone').css('visibility', 'visible');
-        }else if(contactView === 5){
-            $('.contact > div').css('visibility', 'hidden');
-            contactView = 0;
-        }
-    }
-})
+// ---Used for Capstone Presentation---
+//
+// $(window).keydown((event) => {
+//     if(event.which === 84){
+//         techView++;
+//
+//         if(techView === 1){
+//             $('#node').css('visibility', 'visible');
+//         }else if(techView === 2){
+//             $('#express').css('visibility', 'visible');
+//         }else if(techView === 3){
+//             $('#sass').css('visibility', 'visible');
+//         }else if(techView === 4){
+//             $('#three').css('visibility', 'visible');
+//         }else if(techView === 5){
+//             $('#webgl').css('visibility', 'visible');
+//         }else if(techView === 6){
+//             $('.tech-top > img').css('visibility', 'hidden');
+//             $('.tech-bottom > img').css('visibility', 'hidden');
+//             techView = 0;
+//         }
+//     }else if(event.which === 67){
+//         contactView++;
+//
+//         if(contactView === 1){
+//             $('#github').css('visibility', 'visible');
+//         }else if(contactView === 2){
+//             $('#linkedin').css('visibility', 'visible');
+//         }else if(contactView === 3){
+//             $('#email').css('visibility', 'visible');
+//         }else if(contactView === 4){
+//             $('#phone').css('visibility', 'visible');
+//         }else if(contactView === 5){
+//             $('.contact > div').css('visibility', 'hidden');
+//             contactView = 0;
+//         }
+//     }
+// })
