@@ -16,10 +16,14 @@ body {
     background-color: black;
 }
 
-button, div > header, div > section, .contact {
+button, div > header, div > section {
     font-family: 'Anaheim';
-    font-size: 18px;
+    font-size: 7vmin;
     color: white;
+}
+
+.content > button {
+    font-size: 2vmin;
 }
 
 .header {
@@ -106,6 +110,10 @@ button.manifest {
 }
 
 @media (min-width: 1024px) {
+    button, div > header, div > section {
+        font-size: 18px;
+    }
+
     .header {
         width: 40vw;
     }
@@ -138,62 +146,3 @@ button.manifest {
         margin-bottom: 0;
     }
 }
-
-// ---Used for Capstone Presentation---
-//
-// .tech-top {
-//     position: fixed;
-//     top: 12vh;
-//     width: 100%;
-//     height: 5em;
-//     display: flex;
-//     justify-content: space-between;
-//     padding: 3em 0;
-//     z-index: 1;
-// }
-//
-// .tech-bottom {
-//     position: fixed;
-//     bottom: 0;
-//     width: 100%;
-//     height: 5em;
-//     display: flex;
-//     justify-content: space-between;
-//     padding: 3em 0;
-//     z-index: 1;
-// }
-//
-// .tech-image {
-//     height: 100%;
-//     margin: 0 3em;
-//     visibility: hidden;
-// }
-//
-// .contact {
-//     div {
-//         img {
-//             width: 3em;
-//         }
-//
-//         span {
-//             margin-left: 1em;
-//             font-size: 24pt;
-//             font-weight: bold;
-//         }
-//
-//         display: flex;
-//         flex-direction: row;
-//         align-items: center;
-//         margin-bottom: 2em;
-//         visibility: hidden;
-//     }
-//
-//     position: fixed;
-//     top: 12vh;
-//     right: 0;
-//     width: 35%;
-//     display: flex;
-//     flex-direction: column;
-//     padding: 3em 0;
-//     z-index: 1;
-// }

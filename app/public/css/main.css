@@ -3,10 +3,13 @@ body {
   margin: 0;
   background-color: black; }
 
-button, div > header, div > section, .contact {
+button, div > header, div > section {
   font-family: 'Anaheim';
-  font-size: 18px;
+  font-size: 7vmin;
   color: white; }
+
+.content > button {
+  font-size: 2vmin; }
 
 .header {
   position: absolute;
@@ -84,6 +87,8 @@ button.manifest {
     display: block; }
 
 @media (min-width: 1024px) {
+  button, div > header, div > section {
+    font-size: 18px; }
   .header {
     width: 40vw; }
   button.manifest {

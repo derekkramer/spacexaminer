@@ -6,7 +6,7 @@ body {
 
 div > button, div > header, div > section {
   font-family: 'Anaheim';
-  font-size: 18px;
+  font-size: 1.5vmin;
   color: white; }
 
 .header {
@@ -20,10 +20,10 @@ div > button, div > header, div > section {
   padding: 1em 2em;
   z-index: 1; }
   .header img {
-    height: 100%;
+    width: 70%;
     opacity: 0.8; }
   .header button {
-    width: 10em;
+    width: 20%;
     height: 2.5em;
     opacity: 0.8;
     background-color: #151515;
@@ -68,3 +68,14 @@ div > button, div > header, div > section {
     background-color: #242424;
     border-top: 1px solid #616161;
     padding: 16px 32px; }
+
+@media (min-width: 1024px) {
+  div > button, div > header, div > section {
+    font-size: 18px; }
+  .header {
+    align-items: center; }
+    .header img {
+      width: initial;
+      height: 100%; }
+    .header button {
+      width: 10em; } }
